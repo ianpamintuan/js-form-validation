@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Javascript Form Validation</h1>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <section id="mainForm">
+                <h2>USER PROFILE</h2>
+                <hr>
+                <form name="frmUserProfile" id="frmUserProfile">
+                    <div class="form-elem">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="form-elem">
+                        <label for="middleInitial">Middle Initial</label>
+                        <input type="text" name="middleInitial" id="middleInitial">
+                    </div>
+                    <div class="form-elem">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="form-elem">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="form-elem">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-elem">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                    <div class="form-elem">
+                        <label>Birth Date</label>
+                        <br>
+                        <select name="month">
+                        </select>
+                        <select name="day">
+                        </select>
+                        <select name="year">
+                        </select>
+                    </div>
+                    <div class="form-elem">
+                        <label>Country</label>
+                        <br>
+                        <select name="country">
+                            <option value="USA">USA</option>
+                            <option value="Philippines" selected>Philippines</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Singapore">Singapore</option>
+                        </select>
+                    </div>
+                    <div class="form-elem">
+                        <label>Gender</label>
+                        <br>
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male" class="normalFont">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female" class="normalFont">Female</label>
+                    </div>
+                    <div class="form-elem">
+                        <label>Options:</label>
+                        <br>
+                        <input type="checkbox" name="optionalEmails" id="discounts">
+                        <label for="discounts" class="normalFont">Receive emails for discounts.</label>
+                        <br>
+                        <input type="checkbox" name="optionalEmails" id="announcements">
+                        <label for="announcements" class="normalFont">Receive emails for announcements.</label>
+                        <br>
+                        <input type="checkbox" name="optionalEmails" id="events">
+                        <label for="events" class="normalFont">Receive emails for latest events.</label>
+                    </div>
+                    <div class="form-elem">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms" class="normalFont italicFont">I agree to all the terms and conditions in the proper use of this site.</label>
+                    </div>
+                    
+                    <div class="form-elem buttons">
+                        <input type="button" value="Submit" onclick="validate()">
+                        <input type="reset" value="Cancel" onclick="resetForm()">
+                    </div>
+                </form>
+            </section>
+            
+            <section id="summary">
+                <h2>SUMMARY</h2>
+                <hr>
+                <div id="content">
+                
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
